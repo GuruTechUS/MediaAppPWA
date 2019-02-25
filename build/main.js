@@ -61,7 +61,7 @@ var HomePage = /** @class */ (function () {
         //url = 'http://47.204.102.104/LiveApp/streams/149945038917944819523206.m3u8';
         //url = 'http://192.168.254.152:5080/LiveApp/streams/149945038917944819523206.m3u8';
         //url = '<iframe width="560" height="315" src="//149.28.42.2:5080/LiveApp/play.html?name=604642851288094330788572'
-        this.url = 'http://149.28.42.2:5080/LiveApp/streams/604642851288094330788572.m3u8';
+        this.url = 'http://149.28.42.2:5080/LiveApp/streams/039838322529936096880808.m3u8';
     }
     HomePage.prototype.playVideo = function () {
         var options = {
@@ -73,7 +73,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/gopinathnelluri/workspace/gurutech/vs2/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  Test HTML5 Player\n  <video width="352" height="288" type="application/x-mpegurl" src="{{url}}" controls autoplay>\n  </video>\n  <!--\n  <br><br>\n  <button ion-button (click)="playVideo()" color="primary">Native Player Test</button>\n-->\n</ion-content>\n'/*ion-inline-end:"/Users/gopinathnelluri/workspace/gurutech/vs2/src/pages/home/home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"/Users/gopinathnelluri/workspace/gurutech/vs2/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-label position="floating">Stream URL</ion-label>\n    <ion-input [(ngModel)]="url"></ion-input>\n  </ion-item>\n  <br />\n  <video width="352" height="288" type="application/x-mpegurl" src="{{url}}" controls autoplay>\n  </video>\n\n\n  <!--\n  <br><br>\n  <button ion-button (click)="playVideo()" color="primary">Native Player Test</button>\n-->\n</ion-content>'/*ion-inline-end:"/Users/gopinathnelluri/workspace/gurutech/vs2/src/pages/home/home.html"*/,
             providers: []
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_streaming_media__["a" /* StreamingMedia */]])
